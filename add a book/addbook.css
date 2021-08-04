@@ -1,0 +1,103 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    /* height: 100vh; */
+    width: 80%;
+    margin: auto;
+    /* height: 140vh; */
+    background: url(../image/bacground.jpg) rgb(237 237 237);
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: 400px;
+    background-repeat: repeat;
+}
+/* .form{
+    height: 100vh;
+    width: 80%;
+    margin: auto;
+    height: 140vh;
+    background: url("../image/bacground.jpg") rgba(0, 0, 0, 0.1);
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: 165px;
+    background-repeat: repeat;
+} */
+.welcum{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+.welcum h3{
+    margin: 2px 2px;
+    font-size: 35px;
+}
+.from1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+input{
+    height: 45px;
+    margin: 5px 5px 5px 5px;
+    font-size: 22px;
+}
+label{
+    margin: 5px 5px 5px 5px;
+    font-family: monospace;
+    font-weight: 900;
+    font-size: 15px;
+
+}
+.block{
+    display: block;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+.home{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 40px;
+    margin-left: 20px;
+
+}
+.submit{
+    height: 40px;
+    width: 150px;
+    cursor: pointer;
+    border: 2px solid rgb(168, 168, 168);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    font-size: 15px;
+
+}
+.submitxx{
+    margin: auto;
+
+}
+img#prevImg {
+    max-width: 400px;
+    margin: 10px;
+    border-radius: 0.25rem;
+}
+div#prevImgPlaceholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 176px;
+    max-width: 400px;
+    /* width: 47%; */
+    border: 5px dashed #909999;
+    background: whitesmoke;
+    margin: 7px;
+}
+
+div#prevImgPlaceholder h4 {font-size: 33px;color: gray;}

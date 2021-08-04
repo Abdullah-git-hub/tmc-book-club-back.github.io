@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="addbook.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-storage.js"></script>
+    <title>বই যোগ করি</title>
+</head>
+<body>
+    <div class="form">
+        <div class="home">
+            <h3><a href="../index.html"> <i class="fas fa-home"></i> </a></h3>
+          </div>
+        <div class="welcum">
+            <h3>WELCOME</h3>
+            <h3>ADD A BOOK</h3>
+        </div>
+        <form action="" id="form" class="from1">
+            <label for="text">Your Name:</label>
+            <input required type="text" name="" id="username">
+
+            <label for="text">Book Name:</label>
+            <input required type="text" name="" id="bookname">
+
+            <label for="number">Contact number:</label>
+            <input required type="text" name="" id="number">
+
+            <label for="bookImage">Book image: </label>
+            <input type="file" name="" id="bookImage" accept="image/*">
+            <img id="prevImg" alt="">
+            <div id="prevImgPlaceholder"><h4>Preview Your Image</h4></div>
+
+            <label for="condition">The Condition of the book:</label>
+            <input required type="number" name="" id="condition" placeholder="How many years old">
+
+            <label for="Writertext">Writer name:</label>
+            <input required type="text" name="" id="writernam">
+
+            <label for="text">Your Social ID link:</label>
+            <input required type="url" name="" id="idlink" placeholder="Must be include (https://www.)">
+            <div class="submitxx">
+            <button class="submit">Submit</button>
+            </div>
+          
+        </form>
+    </div>
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyAlxrWmm4IQVmV8B5we-KFPWZYL-FV-Jqg",
+        authDomain: "tmc-bookclub.firebaseapp.com",
+        projectId: "tmc-bookclub",
+        storageBucket: "tmc-bookclub.appspot.com",
+        messagingSenderId: "173426486766",
+        appId: "1:173426486766:web:4b89bd1822913fe1c872ff"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+
+      const db = firebase.firestore();
+      const storage = firebase.storage().ref();
+
+      // db setting
+      db.settings({ timestampsInSnapshots: true });
+
+    </script>
+
+    <script src="jquery.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
