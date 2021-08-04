@@ -1,0 +1,157 @@
+@media (max-width:1025px) {
+
+    .image{
+        flex-direction: column-reverse;
+    }
+    .box{
+        flex-direction: column;
+    }
+    .box2{
+        flex-direction: column;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+    .container2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+    .bottom{
+       margin-top: 4rem;
+        background: none;
+    
+        
+    }
+    .fab{
+        font-size: 40px;
+        text-align: center;
+        
+    }
+   
+    .image{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        align-items: center;
+
+        
+    }
+    .image2{
+        margin: 0rem 0em 0rem 0rem;
+        text-align: center;
+    }
+    .image1 img{
+        height: 300px;
+        width: 300px;
+    }
+    .image2 img{
+        height: 200px;
+        width: 300px;
+
+       
+    }
+    .images img{
+        height: 200px;
+        width: 200px;
+    }
+    .images video{
+        height: 200px;
+        width: 200px;
+    }
+    .dibba{
+        text-align: center;
+        margin: 2px;
+    }
+    .linking{
+        text-align: center;
+        width:130px ;
+    }
+  
+ 
+}
+@media (max-width:600px) {
+    .image{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column-reverse;
+
+    }
+    .image2{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    .image1 img{
+        height: 300px;
+        width: 300px;
+    }
+    .image2 img{
+        height: 200px;
+        width: 300px;
+
+       
+    }
+    .image2 p{
+        text-align: center;
+        margin-top: -2rem;
+        font-weight: 900;
+        color: rgb(243, 61, 0);
+        font-size: 25px;
+        font-family: sans-serif;
+    }
+    .second-para{
+        font-size: 18px;
+        font-weight: 900;
+        font-family: sans-serif;
+    
+    }
+
+}
+@media (max-width:325px) {
+    .bottom{
+        margin-top: 10rem;
+         background: none;
+     
+         
+     }
+     .section{
+        height: 120vh;
+        width: 100%;
+        background: url("../image/bacground.jpg") ;
+        background-blend-mode: darken;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    
+        
+    }
+    
+}
+@media (max-width:380px) {
+   
+     .section{
+        height: 120vh;
+        width: 100%;
+        background: url("../image/bacground.jpg") ;
+        background-blend-mode: darken;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    
+        
+    }
+    
+}
+
+  
+
+

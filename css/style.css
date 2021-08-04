@@ -1,0 +1,127 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(#ffffffb3, #ffffffe0),url(../image/bacground.jpg);
+    background-size: 415px;
+}
+.image{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.image1 img{
+    height: 500px;
+    width: 500px;
+}
+.section{
+    /* height: 100vh; */
+    width: 100%;
+    /* background: url("../image/bacground.jpg"); */
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: contain;
+    /* background-repeat: no-repeat; */
+    display: block;
+}
+.image2{
+    margin: 3rem 7em 0rem 0rem;
+    text-align: center;
+}
+.image2 p{
+    text-align: center;
+    margin-top: -2rem;
+    font-weight: 900;
+    color: rgb(243, 61, 0);
+    font-size: 40px;
+    font-family: sans-serif;
+}
+.second-para{
+    font-size: 25px;
+    font-weight: 900;
+    font-family: sans-serif;
+
+}
+.image2 img{
+    height: 300px;
+    width: 400px;
+   
+}
+.linking{
+    text-align: center;
+    width:300px ;
+}
+.linking h1{
+    font-family: sans-serif;
+    font-size: 42px;
+    color: rgb(243, 61, 0);
+
+
+}
+
+.fab{
+    font-size: 55px;
+    text-align: center;
+    margin: 6px;
+    
+}
+.fa-facebook{
+    color: blue;
+
+}
+.fa-youtube{
+    color: red;
+}
+.bottom{
+    /* height: 110vh; */
+    width: 100%;
+    /* background: url("../image/bacground.jpg"); */
+    /* background-blend-mode: darken; */
+    /* background-position: center; */
+    /* background-size: contain; */
+    /* background-repeat: no-repeat; */
+    display: block;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    display: flex;
+
+}
+.box2{
+    /* display: flex; */
+}
+.images img{
+    /* height: 200px; */
+    width: 200px;
+}
+.images video{
+    height: 200px;
+    width: 200px;
+}
+.dibba{
+    margin: 5px 60px;
+    text-align: center;
+}
+.dibba a:hover{
+    color: black;
+
+}
+.dibba a{
+    text-decoration: none;
+    color:#e17055 ;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: monospace;
+
+}
