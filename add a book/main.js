@@ -41,15 +41,6 @@ imgFile.addEventListener("change", function () {
 //     })
 // });
 
-// db.collection('users').add({
-//     // text: form.txtmsg.value,
-//     // text: `${username.innerText}: ${form.txtmsg.value}`,
-//     text: `${userName}: ${finTxt}`,
-//     creditAt: sendDate,
-//     stime: time,
-//     userId,
-// })
-
 const username = $("#username");
 const bookname = $("#bookname");
 const phnumber = $("#number");
@@ -81,19 +72,6 @@ form.addEventListener("submit", function (e) {
             console.log(bookimgdownlink);
         })
 
-    // db.collection("pending").add({
-    //     username: username.val(),
-    //     bookname: bookname.val(),
-    //     phnumber: phnumber.val(),
-    //     bookimglink: bookimgdownlink,
-    //     condition: condition.val(),
-    //     writter: writter.val(),
-    //     idlink: idlink.val()
-    // })
-
     $("input").val("");
     alert("Sent");
 })
-
-// sending image to storage
-
