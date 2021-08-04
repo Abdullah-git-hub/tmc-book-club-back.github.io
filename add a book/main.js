@@ -91,8 +91,8 @@ form.addEventListener("submit", function (e) {
     //     idlink: idlink.val()
     // })
 
-    // $("input").val("");
-    // alert("Sent");
+    $("input").val("");
+    alert("Sent");
 })
 
 // sending image to storage
