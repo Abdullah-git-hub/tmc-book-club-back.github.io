@@ -44,14 +44,14 @@ imgFile.addEventListener("change", function () {
 const username = $("#username");
 const bookname = $("#bookname");
 const phnumber = $("#number");
-const bookimg = document.getElementById("bookImage");
+// const bookimg = document.getElementById("bookImage");
 const condition = $("#condition");
 const writter = $("#writernam");
 const idlink = $("#idlink");
 
 form.addEventListener("submit", function (e) {
     e.preventDefault();
-    var file = bookimg.files[0];
+    var file = imgFile.files[0];
     var filename = file.name;
     let bookimgdownlink;
 
@@ -67,11 +67,15 @@ form.addEventListener("submit", function (e) {
                 condition: condition.val(),
                 writter: writter.val(),
                 idlink: idlink.val()
+            }).then(() => {
+                console.log(bookimgdownlink);
+                $("input").val("");
+                imgFile.files[0] = null;
+                prevImg.style.display = "none";
+                imgplchldr.style.display = "block";
+                prevImg.setAttribute("src", "");
+                alert("Sent");
             })
-
-            console.log(bookimgdownlink);
-            $("input").val("");
-            alert("Sent");
         })
 
 })
