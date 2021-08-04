@@ -70,8 +70,8 @@ form.addEventListener("submit", function (e) {
             })
 
             console.log(bookimgdownlink);
+            $("input").val("");
+            alert("Sent");
         })
 
-    $("input").val("");
-    alert("Sent");
 })
