@@ -54,7 +54,7 @@ form.addEventListener("submit", function (e) {
     var sendTime = new Date();
 
     var file = imgFile.files[0];
-    var filename = file.name + "-" + sendTime.getHours() + "-" + "date:" + sendTime.getDate()+ "-" + sendTime.getMonth() + "months(index)" + "-" + sendTime.getFullYear();
+    var filename = sendTime.getHours() + "-" + "date:" + sendTime.getDate()+ "-" + sendTime.getMonth() + "months(index)" + "-" + sendTime.getFullYear() + file.name;
     let bookimgdownlink;
 
     storage.child(filename).put(file)
@@ -65,6 +65,7 @@ form.addEventListener("submit", function (e) {
                 username: username.val(),
                 bookname: bookname.val(),
                 phnumber: phnumber.val(),
+                bookref: filename,
                 bookimglink: bookimgdownlink,
                 condition: condition.val(),
                 writter: writter.val(),
