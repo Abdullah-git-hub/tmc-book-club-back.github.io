@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-storage.js"></script>
+</head>
+<body>
+    <section>
+
+        <div class="reqBooksBoxCon">
+            <div class="reqBooksBox">
+                <div class="bookImg">
+                    <img src="https://media.istockphoto.com/photos/colored-powder-explosion-on-black-background-picture-id1057506940?k=6&m=1057506940&s=612x612&w=0&h=C11yA-ESqeuCX63QkRpPyWmAMXJJvZw0niQluGnATlI=" alt="">
+                </div>
+                <div class="detailsTxt">
+                    <fieldset>
+                        <legend>Book Details</legend>
+                        <table>
+                            <tr>
+                                <td>Book Name:</td>
+                                <td class="bookName">Something</td>
+                            </tr>
+                            <tr>
+                                <td>Writer Name:</td>
+                                <td class="writerName">Something</td>
+                            </tr>
+                            <tr>
+                                <td>Book Condition:</td>
+                                <td><span class="bookCondition">3</span>&nbsp;years old</td>
+                            </tr>
+                        </table>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>User Details</legend>
+                        <table>
+                            <tr>
+                                <td>User Name:</td>
+                                <td class="userName">something</td>
+                            </tr>
+                            <tr>
+                                <td>Contact number:</td>
+                                <td><a href="tel:+" class="userContactNum">1200909</a></td>
+                            </tr>
+                            <tr>
+                                <td>Social Media link:</td>
+                                <td><a href="" class="userSocialLink" target="_blank">something</a></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </div>
+                <div class="btns">
+                    <button class="acceptBtn">Accept</button>
+                    <button class="rejectBtn">Reject</button>
+                </div>
+            </div>
+    </section>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCePA5XaX9U6Lq5O5D8-zN-oKz2HBHYDUI",
+        authDomain: "c4cbookclub.firebaseapp.com",
+        projectId: "c4cbookclub",
+        storageBucket: "c4cbookclub.appspot.com",
+        messagingSenderId: "909906158576",
+        appId: "1:909906158576:web:8dd088e8fed007ceeeb335",
+        measurementId: "G-DK0NWLZSV9"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+
+      const db = firebase.firestore();
+      const storage = firebase.storage().ref();
+
+      // db setting
+      db.settings({ timestampsInSnapshots: true });
+
+    </script>
+
+    <script src="jquery.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

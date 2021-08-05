@@ -29,7 +29,7 @@ imgFile.addEventListener("change", function () {
 
 // firebase codes
 
-// db.collection('users').orderBy('creditAt').onSnapshot(snapshot =>{
+// db.collection('users').orderBy('time').onSnapshot(snapshot =>{
 //     let changes = snapshot.docChanges();
 //     changes.forEach(change => {
 //         if(change.type === 'added'){
@@ -51,8 +51,10 @@ const idlink = $("#idlink");
 
 form.addEventListener("submit", function (e) {
     e.preventDefault();
+    var sendTime = new Date();
+
     var file = imgFile.files[0];
-    var filename = file.name;
+    var filename = file.name + "-" + sendTime.getHours() + "-" + "date:" + sendTime.getDate()+ "-" + sendTime.getMonth() + "months(index)" + "-" + sendTime.getFullYear();
     let bookimgdownlink;
 
     storage.child(filename).put(file)
@@ -66,7 +68,8 @@ form.addEventListener("submit", function (e) {
                 bookimglink: bookimgdownlink,
                 condition: condition.val(),
                 writter: writter.val(),
-                idlink: idlink.val()
+                idlink: idlink.val(),
+                time: sendTime,
             }).then(() => {
                 console.log(bookimgdownlink);
                 $("input").val("");
