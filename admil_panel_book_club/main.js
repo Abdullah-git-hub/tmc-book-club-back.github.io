@@ -40,51 +40,52 @@ function showData(doc) {
     infoBox.setAttribute("data-ap", id_num);
 
     infoBox.innerHTML = `
-    <div class="bookImg">
+                <div class="bookImg">
                     <img src="${bookimg_link}" alt="">
-                </div>
-                <div class="detailsTxt">
-                    <fieldset>
-                        <legend>Book Details</legend>
-                        <table>
-                            <tr>
-                                <td>Book Name:</td>
-                                <td class="bookName">${book_name}</td>
-                            </tr>
-                            <tr>
-                                <td>Writer Name:</td>
-                                <td class="writerName">${writter_name}</td>
-                            </tr>
-                            <tr>
-                                <td>Book Condition:</td>
-                                <td><span class="bookCondition">${condition}</span>&nbsp;years old</td>
-                            </tr>
-                        </table>
-                    </fieldset>
-
-                    <fieldset>
-                        <legend>User Details</legend>
-                        <table>
-                            <tr>
-                                <td>User Name:</td>
-                                <td class="userName">${user_name}</td>
-                            </tr>
-                            <tr>
-                                <td>Contact number:</td>
-                                <td><a href="tel:${ph_num}" class="userContactNum">${ph_num}</a></td>
-                            </tr>
-                            <tr>
-                                <td>Social Media link:</td>
-                                <td><a href="${id_link}" class="userSocialLink" target="_blank">Link</a></td>
-                            </tr>
-                        </table>
-                    </fieldset>
-                </div>
-    `
+                </div>`
     // <div class="btns">
     //     <button class="acceptBtn" onclick="accept(${id_num})" data-kl="${id_num}">Accept</button>
     //     <button class="rejectBtn" onclick="remove(${id_num})" data-kl="${id_num}">Reject</button>
     // </div>
+
+    let allDetailsTxt = document.createElement("div");
+    allDetailsTxt.classList.add("detailsTxt");
+    allDetailsTxt.innerHTML = `<fieldset>
+                                   <legend>Book Details</legend>
+                                   <table>
+                                       <tr>
+                                           <td>Book Name:</td>
+                                           <td class="bookName">${book_name}</td>
+                                       </tr>
+                                       <tr>
+                                           <td>Writer Name:</td>
+                                           <td class="writerName">${writter_name}</td>
+                                       </tr>
+                                       <tr>
+                                           <td>Book Condition:</td>
+                                           <td><span class="bookCondition">${condition}</span>&nbsp;years old</td>
+                                       </tr>
+                                   </table>
+                               </fieldset>
+                               
+                               <fieldset>
+                                   <legend>User Details</legend>
+                                   <table>
+                                       <tr>
+                                           <td>User Name:</td>
+                                           <td class="userName">${user_name}</td>
+                                       </tr>
+                                       <tr>
+                                           <td>Contact number:</td>
+                                           <td><a href="tel:${ph_num}" class="userContactNum">${ph_num}</a></td>
+                                       </tr>
+                                       <tr>
+                                           <td>Social Media link:</td>
+                                           <td><a href="${id_link}" class="userSocialLink" target="_blank">Link</a></td>
+                                       </tr>
+                                   </table>
+                               </fieldset>`
+
 
     let btnDiv = document.createElement("div");
     btnDiv.classList.add("btns");
@@ -120,7 +121,9 @@ function showData(doc) {
     btnDiv.append(acceptBtn);
     btnDiv.append(rejectBtn);
 
-    infoBox.append(btnDiv);
+    allDetailsTxt.append(btnDiv);
+
+    infoBox.append(allDetailsTxt);
     box_con.append(infoBox);
 }
 
