@@ -17,6 +17,9 @@
     border: 1.5px solid orangered;
     border-radius: 0.25rem;
     margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .bookImg {
@@ -26,8 +29,9 @@
 }
 
 .bookImg img {
-    max-height: 400px;
-    max-width: 400px;
+    /* max-height: 400px; */
+    /* max-width: 400px; */
+    height: 320px;
     margin: 6px;
     border-radius: 0.25rem;
     box-shadow: 2px 2px 4px 2px #c4c1c1;
