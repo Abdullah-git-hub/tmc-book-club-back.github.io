@@ -11,7 +11,7 @@
 .first-section{
     height: 100vh;
     width: 100%;
-    background: url("../image/bacground.jpg") rgba(0, 0, 0, 0.2) ;
+    background: url("../image/ourbook1.png") rgba(0, 0, 0, 0.5) ;
     background-blend-mode: darken;
     background-position: center;
     background-size: cover;
@@ -23,7 +23,12 @@
 
 
 }
-.btn{
+
+form img{
+    height: 100px;
+    width: 100px;
+}
+.btnn{
     height: 60px;
     width: 200px;
     cursor: pointer;
@@ -32,15 +37,32 @@
     color: white;
 
 }
+.container img{
+    height: 200px;
+    width: 200px;
+
+}
+.container{
+    text-align: center;
+}
+.container h4{
+    font-family:  'Pacifico', cursive;
+    color: orangered;
+}
+.container p{
+    font-family: 'Bebas Neue', cursive;
+    color: black;
+    font-weight: 500;
+}
 button:hover{
     background-color: saddlebrown;
     color: white;
 }
 .form{
-    height: 100vh;
-    width: 80%;
+   
+    width: 90%;
     margin: auto;
-    height: 140vh;
+    height: 160vh;
     background: url("../image/bacground.jpg") rgba(0, 0, 0, 0.1) ;
     background-blend-mode: darken;
     background-position: center;
@@ -67,9 +89,9 @@ button:hover{
 
 }
 input{
-    height: 45px;
+    height: 40px;
     margin: 5px 5px 5px 5px;
-    font-size: 22px;
+    font-size: 18px;
 
 }
 label{
@@ -106,6 +128,14 @@ label{
 .submitxx{
     margin: auto;
 
+}
+.no-1{
+    /* border: 2px solid red; */
+    box-shadow: 2px 1px 10px orangered;
+}
+.container{
+    height: 100vh;
+    width: 100%;
 }
 
 @media (max-width:1025px) {

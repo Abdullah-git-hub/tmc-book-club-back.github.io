@@ -9,6 +9,7 @@
     .box2{
         flex-direction: column;
     }
+  
     .container{
         display: flex;
         justify-content: center;
@@ -24,11 +25,11 @@
 
     }
     .bottom{
-       margin-top: 4rem;
-        background: none;
+       margin-top: 4rem; 
+       background: none; 
     
         
-    }
+     }
     .fab{
         font-size: 40px;
         text-align: center;
@@ -76,6 +77,38 @@
   
  
 }
+@media (max-width:800px) {
+    .image1 img{
+        height: 250px;
+        width: 250px;
+    }
+    .image2 img{
+        height: 150px;
+        width: 250px;
+
+       
+    }
+    .second-para{
+        font-size: 18px;
+        font-weight: 900;
+        font-family: sans-serif;
+    
+    }
+    .dibba{
+        margin: 5px 0px;
+        text-align: center;
+    }
+    .image2 p{
+        text-align: center;
+        margin-top: -2rem;
+        font-weight: 900;
+        color: rgb(243, 61, 0);
+        font-size: 25px;
+        font-family: sans-serif;
+    }
+  
+
+}
 @media (max-width:600px) {
     .image{
         display: flex;
@@ -91,18 +124,18 @@
         flex-direction: column;
     }
     .image1 img{
-        height: 300px;
-        width: 300px;
+        height: 250px;
+        width: 250px;
     }
     .image2 img{
-        height: 200px;
-        width: 300px;
+        height: 150px;
+        width: 250px;
 
        
     }
     .image2 p{
         text-align: center;
-        margin-top: -2rem;
+        margin-top: 0rem;
         font-weight: 900;
         color: rgb(243, 61, 0);
         font-size: 25px;
